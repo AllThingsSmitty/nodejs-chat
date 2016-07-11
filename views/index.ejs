@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/app.min.css">
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Node Chat App</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="dashboard">
+      <div class="row"></div>
+      <div class="col-md-4">
+        <b>Users</b>
+        <hr>
+        <div id="users"></div>
+        <hr class="visible-xs visible-sm">
+      </div>
+      <div class="col-md-8">
+        <input
+           class="col-md-12 col-sm-12"
+           id="data"
+           placeholder="send message" />
+        <hr>
+        <div id="conversation"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="/public/jquery-2.2.4.min.js"></script>
+  <script src="/socket.io/socket.io.min.js"></script>
+  <script src="/public/hollywood.min.js"></script>
+  <script src="/public/app.min.js"></script>
+  <script src="/public/bootstrap.min.js"></script>
+</body>
+</html>
