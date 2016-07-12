@@ -1,30 +1,30 @@
-## Node.js Chat
+# Node.js Chat
 
 Chat app using Node.js and web sockets.
 
 
 ## Run Locally
 
-Install all the dependencies:
+Install all dependencies:
 
-```
+```shell
 npm install (you may need to prefix this with sudo if you're on macOS)
 ```
 
 Run the app:
 
-```
+```shell
 node start.js
 ```
 
-Consider using the package `nodemon` if you'd like. It'll auto start your server every time you save.
+Consider using the [`nodemon`](http://nodemon.io/) package if you'd like. Nodemon will auto start your server every time you save.
 
-```
+```shell
 npm install nodemon -g
 nodemon start.js
 ```
 
-Navigate to `http://localhost:3000`. Start up two browsers and start role-playing.
+Navigate to `http://localhost:3000`. Open two browsers and start role-playing.
 
 
 ## Signing-Up, and Deploying to Heroku
@@ -41,7 +41,7 @@ Navigate to `http://localhost:3000`. Start up two browsers and start role-playin
 1. Sign-up via the website
 1. Login using the command line tool:
 
-```
+```shell
 heroku login
 ```
 
@@ -49,20 +49,20 @@ Next...
 
 Create your Heroku app:
 
-```
+```shell
 heroku create
 ```
 
 Git deploy your app:
 
-```
+```shell
 git push heroku master
 ```
 
 Open the app (same as opening it in the browser):
 
-```
+```shell
 heroku open
 ```
 
-Now your app should be up on Heroku.
+Your app should now be on Heroku.
