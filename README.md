@@ -3,13 +3,22 @@
 Chat app using Node.js and web sockets.
 
 
+## Install Node and Redis
+
+1. Install [NodeJS](http://nodejs.org)
+1. Install [Redis]Go to http://redis.io/download and install Redis
+
+
 ## Run Locally
 
 Install all dependencies:
 
 ```shell
-npm install (you may need to prefix this with sudo if you're on macOS)
+npm install
 ```
+
+You may need to use `sudo npm install` if you're on macOS.
+
 
 Run the app:
 
