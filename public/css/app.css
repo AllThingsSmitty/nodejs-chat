@@ -1,31 +1,12 @@
-body {
-  font-family: Consolas, monospace;
-  font-size: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 700px;
+/* overrides */
+.bg-inverse {
+  background: #373a3c;
+  border-radius: 0;
+  color: #eceeef;
 }
-.dashboard {
-  padding: 5em 1em;
+.navbar-dark .navbar-brand {
+  color: #fff;
 }
-.border {
-  border: 1px solid #ccc;
-  padding: .25em;
-}
-.tweet {
-  margin-bottom: 1.25em;
-  padding: .75em;
-}
-.profile-pic {
-  border: 1px solid #ccc;
-  height: 56px;
-  padding: .25em;
-  width: 56px;
-}
-.wordwrap {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-.importantTag {
-  font-weight: 900;
+.container {
+  font-size: 1.25em;
 }

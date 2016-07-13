@@ -1,6 +1,7 @@
 function getName() {
-  var name = window.names[Math.floor(Math.random() * window.names.length)],
-    tokens = name.split(',');
+  var name = window.names[Math.floor(Math.random() * window.names.length)];
+
+  var tokens = name.split(',');
 
   if (tokens.length > 1) {
     return $.trim(tokens[1]) + ' ' + $.trim(tokens[0]);
@@ -19,7 +20,7 @@ function searchUrlFor(name) {
 
 var name = getName();
 
-$('#data').attr('placeholder', 'send message as ' + name);
+$('#data').attr('placeholder', 'Send message as ' + name);
 
 var socket = io.connect('/');
 
@@ -46,12 +47,10 @@ socket.on('servernotification', function (data) {
   var searchUrl = searchUrlFor(data.username);
 
   if (data.connected) {
-    if (data.toSelf) {
-      data.username = 'you';
-    }
-    $('#conversation').append('connected: <a href="' + searchUrl + '" target="_blank">' + escaped(data.username) + '</a><br>');
+    if (data.toSelf) data.username = 'you';
+    $('#conversation').append('<div class="alert alert-success" role="alert"><b>Connected:</b> <a href="' + searchUrl + '" target="_blank">' + escaped(data.username) + '</a></div>');
   } else {
-    $('#conversation').append('disconnected: <a href="' + searchUrl + '" target="_blank">' + escaped(data.username) + '</a><br>');
+    $('#conversation').append('<div class="alert alert-danger" role="alert"><b>Disconnected:</b> <a href="' + searchUrl + '" target="_blank">' + escaped(data.username) + '</a></div>');
   }
 });
 
