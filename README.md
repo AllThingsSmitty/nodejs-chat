@@ -5,8 +5,7 @@ Chat app using Node.js and web sockets.
 
 ## Install Node and Redis
 
-1. Install [NodeJS](http://nodejs.org)
-1. Install [Redis](http://redis.io/download)
+1. Install [Node.js](http://nodejs.org)
 
 
 ## Run Locally
