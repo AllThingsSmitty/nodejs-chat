@@ -2,53 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Node Chat App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/public/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/public/css/app.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/app.min.css">
 </head>
 <body>
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Node Chat App</a>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
-
+  <nav class="navbar navbar-dark bg-inverse">
+    <a class="navbar-brand" href="#">Node.js Chat App</a>
+  </nav>
   <div class="container">
-    <div class="dashboard">
-      <div class="row"></div>
-      <div class="col-md-4">
-        <b>Users</b>
-        <hr>
-        <div id="users"></div>
-        <hr class="visible-xs visible-sm">
-      </div>
-      <div class="col-md-8">
-        <input
-           class="col-md-12 col-sm-12"
-           id="data"
-           placeholder="send message" />
-        <hr>
-        <div id="conversation"></div>
-      </div>
+    <p><span class="glyphicon glyphicon-user" aria-hidden="true"></span> <b>Users</b></p>
+    <div id="users"></div>
+    <hr>
+    <div class="input-group input-group-lg">
+      <span class="input-group-addon" id="sizing-addon1">
+        <span class="glyphicon glyphicon-inbox" aria-hidden="true"></span>
+      </span>
+      <input type="text" id="data" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" placeholder="Send message">
     </div>
+    <br>
+    <div id="conversation"></div>
   </div>
-  
-  <script src="/public/js/jquery-2.2.4.min.js"></script>
-  <script src="/socket.io/js/socket.io.min.js"></script>
-  <script src="/public/js/hollywood.min.js"></script>
-  <script src="/public/js/app.min.js"></script>
-  <script src="/public/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/public/js/hollywood.js"></script>
+  <script src="/public/js/app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
