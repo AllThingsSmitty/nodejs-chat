@@ -6,7 +6,7 @@ Chat app using Node.js and web sockets.
 ## Install Node and Redis
 
 1. Install [NodeJS](http://nodejs.org)
-1. Install [Redis]Go to http://redis.io/download and install Redis
+1. Install [Redis](http://redis.io/download)
 
 
 ## Run Locally
@@ -17,7 +17,7 @@ Install all dependencies:
 npm install
 ```
 
-You may need to use `sudo npm install` if you're on macOS.
+**Note:** You may need to use `sudo npm install` on macOS.
 
 
 Run the app:
@@ -26,35 +26,35 @@ Run the app:
 node start.js
 ```
 
-Consider using the [`nodemon`](http://nodemon.io/) package if you'd like. Nodemon will auto start your server every time you save.
+**Note:** You may want to consider using [`nodemon`](http://nodemon.io/) which will auto-start your server every time you save.
 
 ```shell
 npm install nodemon -g
 nodemon start.js
 ```
 
-Navigate to `http://localhost:3000`. Open two browsers and start role-playing.
+Navigate to `http://localhost:3000`. Open two browsers and start chatting.
 
 
 ## Signing-Up, and Deploying to Heroku
 
 ### Documentation
 
-1. From heroku.com:
+From [heroku.com](http://heroku.com):
 
   * Click "Documentation"
   * Click "Getting Started"
   * Click Node.js from the list of options
 
-1. Install Heroku toolbelt from [here](https://toolbelt.heroku.com/)
-1. Sign-up via the website
-1. Login using the command line tool:
+Install [Heroku toolbelt](https://toolbelt.heroku.com/).
+
+[Sign-up](https://signup.heroku.com/) via the website.
+
+Login using the command line tool:
 
 ```shell
 heroku login
 ```
-
-Next...
 
 Create your Heroku app:
 
