@@ -1,11 +1,13 @@
 # Node.js Chat
 
-Chat app using Node.js and web sockets.
+A starter chat app using Node.js and web sockets.
+
+<img src="https://rawgit.com/AllThingsSmitty/nodejs-chat/master/chat-app.png" alt="image of Node.js chat app">
 
 
-## Install Node and Redis
+## Install Node.js
 
-1. Install [Node.js](http://nodejs.org)
+1. [Node.js](http://nodejs.org)
 
 
 ## Run Locally
@@ -15,9 +17,6 @@ Install all dependencies:
 ```shell
 npm install
 ```
-
-**Note:** You may need to use `sudo npm install` on macOS.
-
 
 Run the app:
 
@@ -33,44 +32,3 @@ nodemon start.js
 ```
 
 Navigate to `http://localhost:3000`. Open two browsers and start chatting.
-
-
-## Signing-Up, and Deploying to Heroku
-
-### Documentation
-
-From [heroku.com](http://heroku.com):
-
-  * Click "Documentation"
-  * Click "Getting Started"
-  * Click Node.js from the list of options
-
-Install [Heroku toolbelt](https://toolbelt.heroku.com/).
-
-[Sign-up](https://signup.heroku.com/) via the website.
-
-Login using the command line tool:
-
-```shell
-heroku login
-```
-
-Create your Heroku app:
-
-```shell
-heroku create
-```
-
-Git deploy your app:
-
-```shell
-git push heroku master
-```
-
-Open the app (same as opening it in the browser):
-
-```shell
-heroku open
-```
-
-Your app should now be on Heroku.
