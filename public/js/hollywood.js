@@ -96,7 +96,7 @@ window.names = [
 	'Liam Hemsworth',
 	'Lily James',
 	'Lucy Hale',
-	'Lupita Nyong'o',
+	'Lupita Nyongo',
 	'Mariska Hargitay',
 	'Mark Ruffalo',
 	'Martha Hunt',
