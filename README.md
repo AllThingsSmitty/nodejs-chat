@@ -1,6 +1,6 @@
 # Node.js Chat
 
-A starter chat app using Node.js and web sockets.
+A starter chat app using Node.js and WebSockets.
 
 <img src="https://rawgit.com/AllThingsSmitty/nodejs-chat/master/chat-app.png" alt="image of Node.js chat app" width="500">
 
